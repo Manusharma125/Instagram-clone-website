@@ -40,10 +40,10 @@ The main goal of this project was to recreate the look and feel of Instagram whi
 
 ## 📸 Preview
 
-<div align="center">
+<div text-align="center">
 
   <!-- Add your project screenshot here -->
-  <img src="./screenshots/home.png" width="90%" alt="Instagram Clone Preview"/>
+  <img src="https://drive.google.com/thumbnail?id=1Iz_j2qLT11FVJ94ao549YUzbNfEfiEN0&sz=s800" width="90%" alt="Instagram Clone Preview"/>
 
 </div>
 
