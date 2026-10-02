@@ -14,7 +14,7 @@ import { FaMeta } from "react-icons/fa6";
 
 
 
-export function Header() {
+export function Header() { 
 
 
     return (
@@ -97,7 +97,7 @@ export function Header() {
 
             <FiPlus className="sm:hidden md:hidden" />
 
-            <div className="flex items-end gap-1 ml-20 font-sansita sm:ml-0 sm:px-4 sm:font-sans sm:items-center md:hidden">
+            <div className="flex items-end gap-1 font-sansita sm:ml-0 sm:px-4 sm:font-sans sm:items-center md:hidden">
                 <h1 className="font-bold">Instagram</h1>
                 <IoIosArrowDown className=" sm:font-thin sm:pt-2" />
             </div>
