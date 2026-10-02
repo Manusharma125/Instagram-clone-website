@@ -1,10 +1,14 @@
 import HomePage from "./HomePage";
+import { Routes, Route } from "react-router-dom";
 
 
 function App(){
   return (
     <div className=" min-h-screen max-w-screen">
-      <HomePage/>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/reels" element={<ReelsPage />} />
+      </Routes>
     </div>
   )
 };

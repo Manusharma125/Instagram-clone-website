@@ -11,10 +11,11 @@ import { CiSearch } from "react-icons/ci";
 import { HiOutlineChartSquareBar } from "react-icons/hi";
 import { IoIosMenu } from "react-icons/io";
 import { FaMeta } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 
 
-export function Header() { 
+export function Header() {
 
 
     return (
@@ -36,13 +37,15 @@ export function Header() {
 
                     <div className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
-                        <BsPlayBtn className="z-2"/>
-                        <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Reels</h1>
+                        <BsPlayBtn className="z-2" />
+                        <Link to="/reels" className="absolute -left-100 duration-300 text-base group-hover:left-13">
+                            Reels
+                        </Link>
                     </div>
 
                     <div className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
-                        <LuSend className="z-2"/>
+                        <LuSend className="z-2" />
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Messages</h1>
                     </div>
 
@@ -54,7 +57,7 @@ export function Header() {
 
                     <div className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
-                        <FaRegHeart className="z-2"/>
+                        <FaRegHeart className="z-2" />
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Like</h1>
                     </div>
 
@@ -87,7 +90,7 @@ export function Header() {
 
                     <div className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
-                        <FaMeta className="z-2"/>
+                        <FaMeta className="z-2" />
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13 whitespace-nowrap">Also From Meta</h1>
                     </div>
                 </div>
