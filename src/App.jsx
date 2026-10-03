@@ -1,4 +1,5 @@
 import HomePage from "./HomePage";
+import ReelsPage from "./ReelsPage";
 import { Routes, Route } from "react-router-dom";
 
 

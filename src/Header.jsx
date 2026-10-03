@@ -38,7 +38,7 @@ export function Header() {
                     <div className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <BsPlayBtn className="z-2" />
-                        <Link to="/reels" className="absolute -left-100 duration-300 text-base group-hover:left-13">
+                        <Link to="/reels" className="absolute -left-100 duration-300 text-base group-hover:left-13 text-black">
                             Reels
                         </Link>
                     </div>
@@ -121,7 +121,7 @@ export function Footer() {
         <div className="text-center text-2xl flex justify-between items-center p-4 fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 sm:px-10 md:hidden">
             <GoHomeFill className="cursor-pointer" />
             <IoIosSearch className="hidden sm:block cursor-pointer" />
-            <BsPlayBtn className="cursor-pointer" />
+            <Link to="/reels"><BsPlayBtn className="cursor-pointer" /></Link>
             <FiPlus className="hidden sm:block cursor-pointer" />
             <LuSend className="cursor-pointer" />
             <IoIosSearch className="sm:hidden cursor-pointer" />
