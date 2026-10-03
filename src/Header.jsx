@@ -35,68 +35,68 @@ export function Header() {
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Home</h1>
                     </div>
 
-                    <div className="flex items-center relative gap-3 cursor-pointer group/bg">
+                    <Link to="/reels" className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <BsPlayBtn className="z-2" />
-                        <Link to="/reels" className="absolute -left-100 duration-300 text-base group-hover:left-13 text-black">
+                        <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">
                             Reels
-                        </Link>
-                    </div>
+                        </h1>
+                    </Link>
 
-                    <div className="flex items-center relative gap-3 cursor-pointer group/bg">
+                    <Link to="/messages" className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <LuSend className="z-2" />
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Messages</h1>
-                    </div>
+                    </Link>
 
-                    <div className="flex items-center relative gap-3 cursor-pointer group/bg">
+                    <Link to="/search" className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <IoIosSearch className="text-3xl z-2" />
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Search</h1>
-                    </div>
+                    </Link>
 
-                    <div className="flex items-center relative gap-3 cursor-pointer group/bg">
+                    <Link to="/likes" className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <FaRegHeart className="z-2" />
-                        <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Like</h1>
-                    </div>
+                        <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Likes</h1>
+                    </Link>
 
-                    <div className="flex items-center relative gap-3 cursor-pointer group/bg">
+                    <Link to="/create" className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <FiPlus className="text-3xl z-2" />
-                        <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Creat</h1>
-                    </div>
+                        <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Create</h1>
+                    </Link>
 
-                    <div className="flex items-center relative gap-3 cursor-pointer group/bg">
+                    <Link to="/dashboard" className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <HiOutlineChartSquareBar className="text-3xl z-2" />
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Dashboard</h1>
-                    </div>
+                    </Link>
 
-                    <div className="flex items-center relative gap-3 cursor-pointer group/bg">
+                    <Link to="/profile" className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <img className="rounded-full z-2 w-7 cursor-pointer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUy-t00mImJn20OoJQGOZ-hpNBUnrKty6pmaC96C6r_Q&s=10" alt="Story" />
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">Profile</h1>
-                    </div>
+                    </Link>
                 </div>
 
                 {/* div three */}
                 <div className="flex flex-col gap-5">
-                    <div className="flex items-center relative gap-3 cursor-pointer group/bg">
+                    <Link to="/more" className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <IoIosMenu className="text-3xl z-2" />
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13">More</h1>
-                    </div>
+                    </Link>
 
-                    <div className="flex items-center relative gap-3 cursor-pointer group/bg">
+                    <Link to="/meta" className="flex items-center relative gap-3 cursor-pointer group/bg">
                         <div className="absolute -left-100 px-23 py-5 rounded-lg duration-100 bg-gray-200 group-hover/bg:-left-3"></div>
                         <FaMeta className="z-2" />
                         <h1 className="absolute -left-100 duration-300 text-base group-hover:left-13 whitespace-nowrap">Also From Meta</h1>
-                    </div>
+                    </Link>
                 </div>
 
 
-            </div>
+            </div >
 
             <FiPlus className="sm:hidden md:hidden" />
 
@@ -112,7 +112,7 @@ export function Header() {
 
             <FaRegHeart className="sm:hidden md:hidden lg:hidden" />
 
-        </div>
+        </div >
     )
 };
 

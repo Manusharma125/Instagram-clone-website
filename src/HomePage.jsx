@@ -5,6 +5,7 @@ import StorySection from "./StorySection";
 import { LuSend } from "react-icons/lu";
 import { BsThreeDots } from "react-icons/bs";
 import SideChat from "./SideChat";
+import { Link } from "react-router-dom";
 
 
 function HomePage() {
@@ -15,11 +16,11 @@ function HomePage() {
                 <StorySection />
                 <Reels />
             </div>
-            <div className="hidden sm:flex items-center gap-3 fixed bottom-23 cursor-pointer right-10 text-2xl p-4 rounded-full shadow-xl/30 bg-white md:px-8 md:bottom-8">
+            <Link to="/messages" className="hidden sm:flex items-center gap-3 fixed bottom-23 cursor-pointer right-10 text-2xl p-4 rounded-full shadow-xl/30 bg-white md:px-8 md:bottom-8">
                 <LuSend />
                 <p className="hidden md:block text-base">Messages</p>
                 <BsThreeDots className="hidden md:block text-base" />
-            </div>
+            </Link>
             <SideChat />
             <Footer />
         </div>
